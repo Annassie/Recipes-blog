@@ -3,13 +3,13 @@
   <nav class="my-2 my-md-0 mr-md-3">
     <a class="p-2 text-dark" href="/recipes/index.php">Main</a>
     <a class="p-2 text-dark" href="#">Add post</a>
-    <a class="p-2 text-dark" href="/recipes/contact.php">Contact us</a>
+    <a class="p-2 text-dark" href="contact/contact.php">Contact us</a>
   </nav>
   <?php 
     if($_COOKIE['user'] == 'True'):
   ?>
-  <a class="btn btn-outline-primary" href="/recipes/auth.php">Кабинет пользователя</a>
+  <a class="btn btn-outline-primary" href="../recipes/validation/login.php">Кабинет пользователя</a>
   <?php else: ?>
-  <a class="btn btn-outline-primary" href="/recipes/auth.php">Sign up</a>
+  <a class="btn btn-outline-primary" href="../recipes/validation/login.php">Login</a>
   <?php endif; ?>
 </div>

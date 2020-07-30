@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <title>Contact us</title>
 </head>
 <body>
 
   <!-- Header -->
-  <?php require "blocks/header.php" ?>
+  <?php require "../blocks/header.php" ?>
 
   <div class="container mt-5">
     <form action="contact.php" method="post">
@@ -44,14 +44,14 @@
         mail('L8360@student.jamk.fi', $subject, $message, $headers);
 
         /* If message was sending successfully, it returns to contact.php-page */
-        header('Location: /recipes/contact.php');
+        header('Location: /recipes/contact/contact.php');
       ?>
       
   </form>
   </div>
 
   <!-- Footer -->
-  <?php require "blocks/footer.php" ?>
+  <?php require "../blocks/footer.php" ?>
 
 </body>
 </html>

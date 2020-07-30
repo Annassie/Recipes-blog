@@ -41,6 +41,33 @@
 
 </div>
 
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "root";
+$db = "recipes";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $db);
+
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+} 
+echo "Connected successfully";
+
+//$sql = "INSERT INTO users (name, login, password) VALUES ( '$name', '$login', '$password')";
+
+if ($conn->query($sql) === TRUE) {
+  echo "New record created successfully";
+} else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
+?>
+
+
 <!-- Footer -->
 <?php require "blocks/footer.php" ?>
 
